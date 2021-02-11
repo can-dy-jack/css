@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.h {
+    height: 400px;
+    width: 100%;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    background-color:  red;
+    background-image: linear-gradient(120deg, red, #743e3e);
+}
+
+.h .head_box {
+    padding: 2rem 1rem;
+    padding-top: 100px;
+    /* line-height: 700px; */
+}
+
+.h button {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    transition: background-color 0.5s;
+    outline: none;
+}
+
+.h button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* css实现心形效果 */
+.heart {
+    height: 600px;
+    width: 100%;
+    background-color: #fafafa;
+    display:flex;
+    justify-content: center;align-items: center;
+}
+.heart .heart_box{
+    width: 200px;height: 200px;
+    position: relative;
+    background-color: red;
+    transform: rotate(45deg);
+}
+.heart .heart_box::before {
+    content: '';
+    width: 200px;height: 200px;
+    border-radius: 50%;
+    position: absolute;left: -100px;top: 0px;
+    background-color: red;
+}
+.heart .heart_box::after {
+    content: '';
+    width: 200px;height: 200px;
+    border-radius: 50%;
+    position: absolute;left: 0;top: -100px;
+    background-color: red;
+}
