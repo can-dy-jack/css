@@ -10,7 +10,7 @@
     font-size: 30px;
     text-align: center;
     background-color: #159957;
-    background-image: linear-gradient(120deg, #165880, #169c5a);
+    background-image: linear-gradient(120deg, #6e1111, #6e7989);
 }
 
 .h .head_box {
@@ -20,7 +20,7 @@
 }
 
 .h .d {
-    font-size: 14px;
+    font-size: 16px;
     color: #cdcdcd;
     margin: 1em;
 }
@@ -41,37 +41,27 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* 新拟态 */
-.b {
-    width: 100%;
-    background-color: #f2f2f2;
-    height: 700px;
-}
+/* 可口可乐旋转效果 */
 
-.b .body_box {
+.kele {
     width: 100%;
-    height: 100%;
+    height: 600px;
+    background-color: #FCFCFC;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-
-.b .body_box div {
-    height: 300px;
-    width: 300px;
-    margin: 50px;
+.kele .kele_box {
+    background-image: url(icon.png);
+    background-repeat: repeat-x;
+    background-position: 0 10px;
+    animation: rotating 8s linear infinite;
 }
-
-.b .body_box .n1 {
-    border-radius: 50px;
-    background: #e0e0e0;
-    box-shadow: 20px 20px 60px #bebebe,
-        -20px -20px 60px #ffffff;
-}
-
-.b .body_box .n2 {
-    border-radius: 50%;
-    background: #5386e4;
-    box-shadow: 15px -20px 60px #4772c2,
-        -20px 15px 60px #5f9aff;
+@keyframes rotating {
+    from {
+        background-position: 0 10px;
+    }
+    to {
+        background-position: 530px 10px;
+    }
 }
