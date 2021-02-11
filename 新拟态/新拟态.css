@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.h {
+    height: 400px;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #165880, #169c5a);
+}
+
+.h .head_box {
+    padding: 2rem 1rem;
+    padding-top: 100px;
+    /* line-height: 700px; */
+}
+
+.h .d {
+    font-size: 14px;
+    color: #cdcdcd;
+    margin: 1em;
+}
+
+.h button {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    transition: background-color 0.5s;
+}
+
+.h button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.b {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 700px;
+}
+
+.b .body_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b .body_box div {
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+}
+
+.b .body_box .n1 {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+.b .body_box .n2 {
+    border-radius: 50%;
+    background: #5386e4;
+    box-shadow: 15px -20px 60px #4772c2,
+        -20px 15px 60px #5f9aff;
+}
