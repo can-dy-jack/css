@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cn_ZH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choose</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            background: blue;
+        }
+
+        .box {
+            height: 100px;
+            width: 400px;
+            background: linear-gradient(to right, blue, white, white, blue);
+            /*元素居中*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* 子元素居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box span {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            padding: 10px 0;
+            margin: 20px 2px;
+            text-align: center;
+            font-size: 24px;
+            /* border: none;
+	        overflow: hidden;
+            position: relative;
+            transition: all 0.4s ease 0s; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>《</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>》</span>
+    </div>
+</body>
+
+</html>
