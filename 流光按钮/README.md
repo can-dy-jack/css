@@ -13,19 +13,25 @@
 ### 实现元素居中方法
 
 1. 绝对`定位`法
+
 ```css
 position: absolute;
-top:50%;left:50%;
+top:50%;
+left:50%;
 transform: translate(-50%,-50%);
 ```
+
 利用绝对定位使元素top:50%; left:50%;时，是以左上角为原点定位，所以实现的是左上角为原点居中，因为元素自身有一定的高度和宽度，所以元素本身并不居中。  
 transform：translate(-50%，-50%):向上（X轴）向左（Y轴）移动自身长宽的50%，使元素位于中心。
 
 2. flex`布局`
+
 ```css
 display: flex;
-justify-content: center; // 水平居中
-align-items: center; // 垂直居中
+justify-content: center; /*/* 水平居中*/
+align-items: center; /* 垂直居中*/
+
+height: 100vh;  /*有时候需要*/
 ```
 3. margin + 行高
 ```css
