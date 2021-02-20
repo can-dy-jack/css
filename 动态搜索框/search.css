@@ -1,0 +1,56 @@
+/* 动态搜索框 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left top, rgb(200, 0, 0), #ff461f, #ee97a6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-search {
+    background-color: #2f3640;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px;
+    opacity: 0.6;
+}
+
+.box .box-search:hover .search-txt {
+    width: 240px;
+    padding-left: 15px;
+}
+
+.box .box-search:hover .search-btn {
+    background-color: white;
+}
+.search-btn {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(47, 54, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    transition: 0.4s;
+    width: 0;
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    width: 0;
+}

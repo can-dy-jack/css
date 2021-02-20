@@ -2,6 +2,7 @@ body,div,p,span{
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: #f9f9f9;
@@ -27,7 +28,6 @@ body{
 }
 .main-wrap{
     margin-bottom: 60px;
-    background-color: #f9f9f9;
 }
 .main-wrap .row-wrap{
     display: flex;
@@ -44,6 +44,15 @@ body{
 }
 .main-wrap .row-wrap div:hover{
     cursor: pointer;
-    box-shadow: 4px 3px 10px 2px #ccc;
+    box-shadow: 10px 10px 20px 5px #ccc;
     transform: translateY(-10px);
+}
+.main-wrap .b-row2 div{
+    border: 10px solid aqua;
+}
+.main-wrap .b-row3 div{
+    border: 10px solid #4c221b;
+}
+.main-wrap .b-row1 div{
+    border: 10px solid #0aa344;
 }
