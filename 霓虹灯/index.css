@@ -1,0 +1,107 @@
+body{
+    margin: 0;padding: 0;
+    background-image: url("sbpk.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.box{
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 120px;
+    border: solid 10px #fff;
+    box-shadow: 0 0 70px rgb(190,40,210);
+    display: flex;
+    justify-content: center;align-items: center;
+    cursor: pointer;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 120px;
+    box-shadow: 0 0 100px rgba(200,50,200);
+    background-color: rgba(50,50,200,.4);
+}
+.box:hover{
+    animation: shadowCard 1.25s;
+}
+@keyframes shadowCard{
+    0%,30%,60%,100%{
+        border: 10px solid #fff;
+        box-shadow: 0 0 100px rgba(200,50,200);
+    }
+    15%,45%,80%{
+        border: 10px solid rgba(0, 0, 250,.5);
+        box-shadow: 0 0 120px rgba(0, 0, 250,.8);
+    }
+}
+.box .txt{
+    z-index: 2;
+    font-family: tahoma;
+    letter-spacing: 10px;
+    font-weight: 900;
+    display: flex;justify-content: center;align-items: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+.box .txt::after{
+    content: "NHD/KART·JIM";
+    position: absolute;
+    text-shadow: -3px -3px 0px rgb(250,212,8),
+                3px 3px 0px rgb(8,211,250);
+    clip-path: inset(100% 0 0px 0);
+}
+.box:hover,.txt::after{
+    animation: txtMove 1.25s steps(2);
+}
+@keyframes txtMove{
+    0%{
+        clip-path:inset(80% 0px 0px 0px);
+        transform:translate(-20px,-10px)
+    }
+    10%{
+        clip-path:inset(10% 0px 85% 0px);
+        transform:translate(10px,10px)
+    }
+    20%{
+        clip-path:inset(80% 0px 0px 0px);
+        transform:translate(-10px,10px)
+    }
+    30%{
+        clip-path:inset(10% 0px 85% 0px);
+        transform:translate(0px,5px)
+    }
+    40%{
+        clip-path:inset(50% 0px 30% 0px);
+        transform:translate(-5px,0px)
+    }
+    50%{
+        clip-path:inset(10% 0px 30% 0px);
+        transform:translate(5px,0px)
+    }
+    60%{
+        clip-path:inset(40% 0px 30% 0px);
+        transform:translate(5px,10px)
+    }
+    70%{
+        clip-path:inset(50% 0px 30% 0px);
+        transform:translate(-10px,10px)
+    }
+    80%{
+        clip-path:inset(80% 0px 5% 0px);
+        transform:translate(20px,-10px)
+    }
+    90%{
+        clip-path:inset(80% 0px 0px 0px);
+        transform:translate(-10px,0px)
+    }
+    100%{
+        clip-path:inset(80% 0px 0px 0px);
+        transform:translate(0px,0px)
+    }
+}

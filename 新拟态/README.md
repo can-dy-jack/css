@@ -4,3 +4,5 @@
 ### 推荐网站
 - [Generate Soft-UI CSS code](https://neumorphism.io)
   * [GitHub](https://github.com/adamgiebl/neumorphism)
+- 新拟态2灵感来源 - [gitee - QH_ayang](https://gitee.com/QH_ayang/simulation)
+- 
