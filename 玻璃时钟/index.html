@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玻璃时钟</title>
+    <link rel="stylesheet" href="clock.css">
+    <link rel="icon" href="../img/sea.png">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 阴影 -->
+        <div class="bac"></div>
+        <div class="clock-box">
+            <!-- 时钟指针 -->
+            <div class="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+                <div class="minute">
+                    <div class="mu" id="mn"></div>
+                </div>
+                <div class="second">
+                    <div class="sc" id="sc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const deg = 6;
+        const hr =document.querySelector('#hr');
+        const mn =document.querySelector('#mn');
+        const sc =document.querySelector('#sc');
+
+        setInterval(() =>{
+            let day = new Date();
+            let hh = day.getHours() * 30;
+            let mm = day.getMinutes() * deg;
+            let ss = day.getSeconds() * deg;
+
+            hr.style.transform = `rotate(${hh+(mm/12)}deg)`;
+            mn.style.transform = `rotate(${mm}deg)`;
+            sc.style.transform = `rotate(${ss}deg)`;
+            })
+    </script>
+</body>
+
+</html>

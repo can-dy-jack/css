@@ -21,6 +21,7 @@ body{
 }
 .box .card-box .card:hover {
     transform: translateY(-10px);
+    /* transform: rotate(-1deg); */
     box-shadow: 0px 10px 20px #ccc;
 }
 /* colorr */
@@ -31,13 +32,13 @@ body{
     background-color: #23DD95;
 }
 .list-card1{
-    background-color: #637FFF;
+    background-color: blue;
 }
 .list-card2{
-    background-color: #396FFF;
+    background-color: purple;
 }
 .list-card3{
-    background-color: #688BF7;
+    background-color: green;
 }
 .list-card6{
     background-color: #919ACE;
@@ -46,7 +47,7 @@ body{
     background-color: #FFD666;
 }
 .list-card8{
-    background-color: #ffffff;
+    background-color: #777777;
 }
 .list-card9{
     background-color: #F2655F;
