@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <textarea name="lyb" id="lyb" cols="35" rows="8"></textarea>
+            <br>
+            <button id="btn">send</button>
+            <p>聊天内容：</p>
+            <ul id="list">
+                <li type="none"><small>© 2021 kartjim, Inc.</small></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var content = document.getElementById("lyb");
+        var btn = document.getElementById("btn");
+        var list = document.getElementById("list");
+
+        btn.onclick = function(){
+            // console.log(content.value);
+            if(content.value != ""){
+                var txt = content.value;
+                list.innerHTML = '<li class="list-ol">'+txt+'</li>' + list.innerHTML;
+                content.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
