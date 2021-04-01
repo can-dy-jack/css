@@ -8,17 +8,17 @@ body {
     background-color: #3e5460;
     color: white;
 }
-
 .container {
     padding: 0 10px;
-    width: 600px;
+    width: 400px;
     height: 100vh;
-    margin: auto;
+    margin: 30px auto;
 }
 
 .title {
     text-align: center;
     color: #f0d1a9;
+    margin: 20px 0;
 }
 
 label {

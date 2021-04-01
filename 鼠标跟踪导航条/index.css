@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #c9dd22;
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.toggle {
+    position: relative;
+    top: 250px;
+    display: flex;
+    box-shadow: 2px 5px 15px rgb(0, 0, 0, .7);
+    border-radius: 10px;
+}
+
+.toggle-btn {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(100, 100, 130);
+    z-index: -999;
+    transition: .5s;
+}
+
+.toggle a {
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: seashell;
+}
+
+.toggle a:nth-child(2):hover~.toggle-btn {
+    left: 150px;
+}
+
+.toggle a:nth-child(3):hover~.toggle-btn {
+    left: 300px;
+}
+
+.toggle a:nth-child(4):hover~.toggle-btn {
+    left: 450px;
+}
