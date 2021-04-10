@@ -1,0 +1,16 @@
+
+
+.media{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-device-width:350px){
+    .media{
+        background-color: blue;
+    }
+}
+@media screen and (min-device-width:351px){
+    .media{
+        background-color: aqua;
+    }
+}
