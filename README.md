@@ -12,7 +12,7 @@
 **css优秀效果收藏，避免反复造轮子。**  
 **css常用技巧**
 
-<div style="width:100%; height: 150px;display: flex;align-items: center;justify-content: center;">
+<div align="center">
 	<img src="https://i0.hdslb.com/bfs/emote/3ed5b0b2e1f632884d93abe6ae2a387e6f4395fd.png@112w_112h.webp#pic_center" alt="图片来自bilibili">
 </div>
 
@@ -24,8 +24,10 @@
 ## css技巧&知识积累
 ### 好看的配色
 
-[x]: aliceblue
-[y]: aliceblue
+1. 浅绿色`aliceblue`，即`#f0f8ff`
+	<p style="background-color: aliceblue;width: 80px;;height: 15px;"></p>
+2. 紫檀色 `#4c221b`
+	<p style="background-color: #4c221b;width: 80px;;height: 15px;"></p>
 
 
 ## Markdown注释
@@ -68,7 +70,8 @@ _左右都可以加任意字符（组成各种表情），且第二行之前加�
 ```markdown
 [x]: 注释
 ```
-x可以换成其它任意字符(字母、数字、其它字符均可，甚至`.`都可以),冒号之后加一个空格即可实现<kbd>markdown注释</kbd>。
+x可以换成其它任意字符(字母、数字、其它字符均可，甚至`.`都可以),冒号之后加一个空格即可实现<kbd>markdown注释</kbd>。  
+
 [.]: 注释
 
 
