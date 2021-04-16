@@ -24,7 +24,7 @@
 ## css技巧&知识积累
 ### 好看的配色
 
-1. 浅绿色`aliceblue，即`#f0f8ff`
+1. 浅绿色`aliceblue`，即`#f0f8ff`
 	<p style="background-color: aliceblue;width: 80px;;height: 15px;"></p>
 2. 紫檀色 `#4c221b`
 	<p style="background-color: #4c221b;width: 80px;;height: 15px;"></p>
