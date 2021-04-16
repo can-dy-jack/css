@@ -112,7 +112,7 @@ flex布局基本依靠容器和轴（主轴，交叉轴）。
 
 ## Grid布局
 又称网格布局，，将页面划分为网格，设置行和列。有单元格和网格线。  
-更详细的介绍，参考[阮一峰的博客](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)。
+更详细的介绍，参考:link:[阮一峰的博客](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)。
 1. 基本实现  
 ```css
 div{
