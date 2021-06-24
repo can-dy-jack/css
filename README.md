@@ -1,4 +1,4 @@
-# <p align="center">css优秀项目收集🧡</p>
+# css优秀项目收集🧡
 
 <p align="center">
 	<a href="https://github.com/local-host-8080/demo-html-css">
@@ -25,8 +25,10 @@
 ### 好看的配色
 
 1. 浅绿色`aliceblue`，即`#f0f8ff`
+	
 	<p style="background-color: aliceblue;width: 80px;;height: 15px;"></p>
 2. 紫檀色 `#4c221b`
+	
 	<p style="background-color: #4c221b;width: 80px;;height: 15px;"></p>
 
 
@@ -73,5 +75,4 @@ _左右都可以加任意字符（组成各种表情），且第二行之前加�
 x可以换成其它任意字符(字母、数字、其它字符均可，甚至`.`都可以),冒号之后加一个空格即可实现<kbd>markdown注释</kbd>。  
 
 [.]: 注释
-
 
