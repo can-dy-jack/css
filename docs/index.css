@@ -15,12 +15,16 @@ body{
     display: flex;flex-direction: row;
     justify-content: center;
 }
-.box .sc div input{
-    width: 120px;
+.box .sc div input,button{
+    width: 150px;
     margin-bottom: 5px;
 }
 .box .sc div{
     display: flex;
     margin: 8px;
     flex-direction: column;
+}
+#result{
+    margin: 5px 0;
+    color: red;
 }

@@ -33,17 +33,20 @@ const res = document.getElementById('result');
 cal.addEventListener('click',()=>{
     // let len = input.length
     // for(i=0;i<len;i++)
-    if(res.textContent == "你的绩点是：" & input[0].value != null){
+    // if(res.textContent == "你的绩点是："){ // & input[0].value != null
         data = score2gpa(input[0].value)
-        res.textContent += data;
+        res.textContent = "你的绩点是：" + data;
         // input[0].value
         // res.innerHTML += input[1].value; 
-    }
+    // }
 })
 
 const clc = document.getElementById('clean');
 clc.addEventListener('click',()=>{
-    res.textContent = "你的绩点是：";
+    res.textContent = " ";
 })
 
-
+const rule = document.getElementById('rule');
+rule.addEventListener('click',()=>{
+    window.open('https://github.com/can-dy-jack/css/blob/main/docs/GPA.md');
+})
