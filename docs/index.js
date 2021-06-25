@@ -79,7 +79,7 @@ clc.addEventListener('click', () => {
 })
 const rule = document.getElementById('rule');
 rule.addEventListener('click', () => {
-    window.open('https://github.com/can-dy-jack/css/blob/main/docs/GPA.md');
+    window.open('https://gitee.com/kartjim/gpa/blob/master/GPA.md');
 })
 
 
