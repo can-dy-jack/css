@@ -48,6 +48,12 @@ body{
     box-shadow: 0 15px 20px 0 rgba(170,170,210,0.6),
                 10px 0 20px 0 rgba(170,170,170,0.6);
 }
+@media screen and (max-width: 400px){
+    .gpamodal{
+        width: 70%;
+        left: 15%;
+    }
+}
 .gpamodal .m-header #closeBtn{
     width: 45px;
     position: absolute;top: 10px;right: 10px;
