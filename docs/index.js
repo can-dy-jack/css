@@ -61,7 +61,10 @@ cal.addEventListener('click',()=>{
 
 const clc = document.getElementById('clean');
 clc.addEventListener('click',()=>{
-    res.textContent = " ";
+    res.textContent = "";
+    for(i=0;i<input.length;i++){
+        input[i].value = "";
+    }
 })
 
 const rule = document.getElementById('rule');
