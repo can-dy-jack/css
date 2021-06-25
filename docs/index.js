@@ -66,8 +66,12 @@ cal.addEventListener('click', () => {
     modal.style.display = "block";
 })
 
+// function
+
 const clc = document.getElementById('clean');
 clc.addEventListener('click', () => {
+
+    modal.style.display = "none";
     res.textContent = "你的绩点是：";
     for (i = 0; i < input.length; i++) {
         input[i].value = "";
