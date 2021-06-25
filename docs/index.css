@@ -21,10 +21,18 @@ body{
 }
 .box .sc div{
     display: flex;
-    margin: 8px;
+    margin: 12px;
     flex-direction: column;
 }
 #result{
     margin: 5px 0;
     color: red;
+}
+
+
+footer{
+    width: 200px;
+    margin: auto;text-align: center;
+    position: relative;bottom: 5px;
+    color: #0B5ED7;
 }
