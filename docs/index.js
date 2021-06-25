@@ -85,15 +85,9 @@ closeBtn.addEventListener("click",()=>{
     modal.style.display = "none";
 });
 
-// 监听window关闭弹窗事件
+// 监听window关闭弹窗事件，即点击其它地方关闭弹窗
 // window.addEventListener("click", outsideClick);
 
-// 关闭弹框事件
-// function closeModal() {
-//     modal.style.display = "none";
-// }
-
-// outsideClick
 // function outsideClick(e) {
 //     if (e.target == modal) {
 //         modal.style.display = "none";
