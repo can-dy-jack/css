@@ -30,7 +30,7 @@
                 <input type="text" class="form-control">
                 <!--SHOU's GPA rule-->
                 <button type="button" class="btn btn-info" id="rule">GPA rule</button>
-                <span id="result"></span>
+
             </div>
             <div class="credit">
                 <span>学分</span>
@@ -49,10 +49,21 @@
             </div>
         </div>
     </div>
+    <!-- 弹框部分 -->
+    <div id="gpamodal" class="gpamodal">
+        <div class="m-header">
+            <span id='closeBtn' class="btn btn-outline-danger">&times;</span>
+        </div>
+        <hr>
+        <div class="m-body">
+            <p id="result">你的绩点是:</p>
+            <p class="bot">结果保留四位小数</p>
+        </div>
+    </div>
 
-    <footer>
+    <!-- <footer>
         <span>Powered by 陈科衡 ™</span>
-    </footer>
+    </footer> -->
     <script src="index.js"></script>
 </body>
 

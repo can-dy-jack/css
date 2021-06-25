@@ -24,15 +24,47 @@ body{
     margin: 12px;
     flex-direction: column;
 }
-#result{
-    margin: 5px 0;
-    color: red;
-}
 
 
-footer{
+/* footer{
     width: 200px;
     margin: auto;text-align: center;
     position: relative;bottom: 5px;
     color: #0B5ED7;
+} */
+
+
+/* 弹窗部分 */
+.gpamodal{
+    display: none;
+    width: 50%;
+    height: 200px;
+    position: absolute;top: 200px;left: 25%;
+    background-color: #66a2f0;
+    z-index: 100;
+    border-radius: 10px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+    box-shadow: 0 15px 20px 0 rgba(170,170,210,0.6),
+                10px 0 20px 0 rgba(170,170,170,0.6);
 }
+.gpamodal .m-header #closeBtn{
+    width: 45px;
+    position: absolute;top: 10px;right: 10px;
+}
+.gpamodal hr{
+    transform: translateY(40px);
+    color: white;
+}
+.gpamodal .m-body{
+    margin: 70px 30px;
+}
+.gpamodal .m-body .bot{
+    position: absolute;bottom: 20px;
+    color: gray;
+}
+@keyframes modalopen{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
