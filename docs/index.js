@@ -56,7 +56,7 @@ cal.addEventListener('click',()=>{
             gpa += allGPA[j]*(credit[j]/sumcredit);
         }
     }
-    res.textContent = "你的绩点是：" + gpa;
+    res.textContent = "你的绩点是：" + gpa.toFixed(4);
 })
 
 const clc = document.getElementById('clean');
