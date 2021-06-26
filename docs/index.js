@@ -81,6 +81,10 @@ const rule = document.getElementById('rule');
 rule.addEventListener('click', () => {
     window.open('https://gitee.com/kartjim/gpa/blob/master/GPA.md');
 })
+const rule2 = document.getElementById('rule2');
+rule2.addEventListener('click', () => {
+    window.open('../markdownEditor/index.html');
+})
 
 
 // 监听关闭弹窗事件
