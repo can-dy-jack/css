@@ -7,22 +7,13 @@
 	<a href="https://neumorphism.io">
 		<img alt="neumorphism" src="https://img.shields.io/badge/link-neumorphism-red">
 	</a>
-</p>  
+</p>
 
 **css优秀效果收藏，避免反复造轮子。**  
 **css常用技巧**
 
-<div align="center">
-	<img src="https://i0.hdslb.com/bfs/emote/3ed5b0b2e1f632884d93abe6ae2a387e6f4395fd.png@112w_112h.webp#pic_center" alt="图片来自bilibili">
-</div>
-
-><p align="right"><small>图片来自bilibili</small></p>
-
-[#_#]:
-	图片来自bilibili
-
 ## css技巧&知识积累
-[markdown editor](https://kartjim.top/css/markdownEditor/index.html)
+[markdown editor](https://kartjim.top/css/markdownEditor/)
 ### 好看的配色
 
 1. 浅绿色`aliceblue`，即`#f0f8ff`
