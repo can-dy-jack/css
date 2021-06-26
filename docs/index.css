@@ -55,6 +55,12 @@ body{
         left: 15%;
     }
 }
+@media screen and (min-width: 800px){
+    .gpamodal{
+        width: 40%;
+        left: 30%;
+    }
+}
 .gpamodal .m-header #closeBtn{
     width: 45px;
     position: absolute;top: 10px;right: 10px;
