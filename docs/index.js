@@ -83,7 +83,7 @@ rule.addEventListener('click', () => {
 })
 const rule2 = document.getElementById('rule2');
 rule2.addEventListener('click', () => {
-    window.open('markdownEditor/index.html');
+    window.open('markdownEditor/');
 })
 
 
