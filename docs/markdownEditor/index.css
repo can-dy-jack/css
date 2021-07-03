@@ -10,6 +10,7 @@ h3{
     text-align: center;
     font-family: 'microsoft yahei';
 }
+
 .md-box{
     display: flex;
 }
@@ -28,8 +29,15 @@ h3{
     width: 49%;
     margin: 0 1% 1% 0;
     padding: 5px;
-    background-color: rgb(255, 250, 222);
+    background-color: rgb(255, 252, 248);
     border-radius: 8px;
     border: 2px solid #C1DAFC;
     overflow: scroll;
+}
+
+.b{
+    position: fixed;display: inline;
+}
+.b button{
+    margin: 2px 15px;
 }

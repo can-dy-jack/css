@@ -1,0 +1,25 @@
+/* @charset "UTF-8"; */
+/*!
+powered by kart jim
+2017-2020
+*/
+
+:root{
+    --bac-col: #fafafa;
+    --black-1: #333;
+    --code-color: #6ad5f8;
+}
+
+
+
+
+
+code{
+    background-color: var(--code-color);
+    margin: 0 2px;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 5px;
+    font-family: Consolas, "Liberation Mono","SF Mono", Menlo, Courier, monospace
+}
+
