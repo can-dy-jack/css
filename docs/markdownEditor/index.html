@@ -8,15 +8,13 @@
     <link rel="icon" href="markdown-mark-white.svg">
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- markdown主题 -->
-    <!-- <link rel="stylesheet" href="css/misty-light.css"> -->
+    <link rel="stylesheet" href="css/markdown.css">
     <!-- <link rel="stylesheet" href="css/xiaolai.css"> -->
-    <!-- <link rel="stylesheet" href="css/github-markdown.css"> -->
     <!-- <link rel="stylesheet" href="css/mweb.css"> -->
-    <link rel="stylesheet" href="css/fluent.css">
+    
+    <link rel="stylesheet" href="css/fluent.css" id="theme-link">
     <!-- <link rel="stylesheet" href="css/scrolls.css"> -->
-
-
-    <!-- <link rel="stylesheet" href="css/markdown.css"> -->
+    <!-- <link rel="stylesheet" href="css/scrolls-dark.css"> -->
 
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
@@ -33,9 +31,10 @@
             aria-expanded="false">主题</button>
         <ul class="dropdown-menu" aria-labelledby="ddmbTheme">
             <!--dropdownMenuButton-->
-            <li><a class="dropdown-item" href="#">fluent</a></li>
-            <li><a class="dropdown-item" href="#">github</a></li>
-            <li><a class="dropdown-item" href="#">misty-light</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)" id="fluent">fluent</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)" id='github-theme'>github</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)" id='misty-light'>misty-light</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)" id='scrolls'>scrolls</a></li>
         </ul>
     </div>
     <h3>markdown编辑器</h3>

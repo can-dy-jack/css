@@ -37,3 +37,20 @@ btnClean.addEventListener('click',()=>{
     mdTxtArea.value = '';
     markdown2html();
 })
+const mistyLight = document.getElementById('misty-light');
+const fluent = document.getElementById('fluent');
+const github = document.getElementById('github-theme');
+const scrolls = document.getElementById('scrolls');
+const link = document.getElementById('theme-link');
+fluent.addEventListener('click',()=>{
+    link.href = 'css/fluent.css';
+})
+github.addEventListener('click',()=>{
+    link.href = 'css/github-markdown.css';
+})
+mistyLight.addEventListener('click',()=>{
+    link.href = 'css/misty-light.css';
+})
+scrolls.addEventListener('click',()=>{
+    link.href = 'css/scrolls.css';
+})
