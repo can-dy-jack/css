@@ -32,3 +32,8 @@ csBtn.addEventListener('click', () => {
     markdown2html();
 })
 
+const btnClean = document.getElementById('btn-clean');
+btnClean.addEventListener('click',()=>{
+    mdTxtArea.value = '';
+    markdown2html();
+})
