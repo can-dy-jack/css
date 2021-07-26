@@ -1,0 +1,248 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bac: #f3f2f4;
+  --primary-dark: #008ada;
+  --primary-light: #39ddfa;
+  --primary: #00abdf;
+  --greyLight-1: #ebf5fc;
+  --greyLight-2: #d5e0f3;
+  --greyLight-3: #c1d9f0;
+  --greyDark: #646b8c;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  background-color: var(--bac);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.container .card {
+  width: 34rem;
+  border-radius: 2rem;
+  background-color: var(--greyLight-1);
+  -webkit-box-shadow: 0px 20px 30px rgba(100, 131, 178, 0.2);
+          box-shadow: 0px 20px 30px rgba(100, 131, 178, 0.2);
+  padding: 5rem;
+  border: 1px solid white;
+}
+
+.container .card-percent {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card-percent svg {
+  width: 24rem;
+  height: 24rem;
+  z-index: 1;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.container .card-percent svg circle {
+  fill: none;
+  stroke-width: 24;
+  stroke-dasharray: 565.2;
+  stroke-dashoffset: 282.6;
+  stroke-linecap: round;
+  -webkit-transform: translate(3rem, 3rem);
+          transform: translate(3rem, 3rem);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.container .card-percent .circle {
+  position: absolute;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 6px 6px 8px var(--greyLight-2), -6px -6px 8px white;
+          box-shadow: 6px 6px 8px var(--greyLight-2), -6px -6px 8px white;
+  background-color: var(--greyLight-1);
+}
+
+.container .card-percent .circle-m {
+  width: 20.5rem;
+  height: 20.5rem;
+  -webkit-box-shadow: inset 8px 8px 10px var(--greyLight-2), inset -4px -4px 8px white;
+          box-shadow: inset 8px 8px 10px var(--greyLight-2), inset -4px -4px 8px white;
+}
+
+.container .card-percent .circle-s {
+  width: 15.5rem;
+  height: 15.5rem;
+  -webkit-box-shadow: 8px 8px 10px var(--greyLight-2), -2px -2px 6px white;
+          box-shadow: 8px 8px 10px var(--greyLight-2), -2px -2px 6px white;
+}
+
+.container .card-percent .card-number {
+  position: absolute;
+  color: var(--greyDark);
+  font-size: 4rem;
+}
+
+.container .form {
+  padding: 4rem;
+  margin-left: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  border-radius: 2rem;
+  background-color: var(--greyLight-1);
+  text-align: center;
+  -webkit-box-shadow: 0px 20px 30px rgba(100, 131, 255, 0.2);
+          box-shadow: 0px 20px 30px rgba(100, 131, 255, 0.2);
+  border: 1px solid white;
+  position: relative;
+}
+
+.container .form input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: .8rem;
+  border-radius: 1rem;
+  color: var(--primary);
+  -webkit-box-shadow: inset 0.2rem 0.2rem 0.4rem var(--greyLight-2), inset -0.3rem -0.3rem 0.4rem white;
+          box-shadow: inset 0.2rem 0.2rem 0.4rem var(--greyLight-2), inset -0.3rem -0.3rem 0.4rem white;
+}
+
+.container .form input::-webkit-input-placeholder {
+  color: var(--greyLight-3);
+}
+
+.container .form input:-ms-input-placeholder {
+  color: var(--greyLight-3);
+}
+
+.container .form input::-ms-input-placeholder {
+  color: var(--greyLight-3);
+}
+
+.container .form input::placeholder {
+  color: var(--greyLight-3);
+}
+
+.container .form input:focus {
+  color: var(--primary);
+  -webkit-box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-3), -0.2rem -0.2rem 0.5rem white;
+          box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-3), -0.2rem -0.2rem 0.5rem white;
+}
+
+.container .form .btn {
+  border: none;
+  outline: none;
+  letter-spacing: .8px;
+  background-color: var(--greyLight-1);
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(-25deg, var(--primary) 0%, var(--primary-light) 100%);
+  margin-left: 6px;
+}
+
+.container .form .btn:hover {
+  background: linear-gradient(-25deg, var(--primary-dark) 0%, var(--primary) 100%);
+}
+
+.container .form .tooltip {
+  opacity: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: -5rem;
+  padding: 1rem 2rem;
+  background-color: var(--greyLight-1);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  color: var(--primary-dark);
+  margin-left: 1rem;
+}
+
+.container .form .tooltip-text {
+  margin-left: .6rem;
+}
+
+.container .form .tooltip.fade-in {
+  -webkit-animation: fadeIn .8s ease;
+          animation: fadeIn .8s ease;
+}
+
+.container .form .tooltip::after {
+  content: '';
+  position: absolute;
+  left: 52%;
+  bottom: 72%;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--greyLight-1);
+  -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  border-radius: 0 0 0 0.4rem;
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    -webkit-transform: translateY(-40px) scale(0.5);
+            transform: translateY(-40px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    -webkit-transform: translateY(-40px) scale(0.5);
+            transform: translateY(-40px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */

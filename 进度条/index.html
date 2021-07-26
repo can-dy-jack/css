@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neumorphism UI</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="../img/js.svg">
 </head>
 <body>
     <div class="container">
         <div class="card">
             <div class="card-percent">
-                <svg></svg>
+                <svg>
+                    <defs>
+                        <radialGradient id="gradient" cx='50%' cy='50%' r='90%' fx='50%' fy='50%'>
+                            <stop offset="30%" stop-color="var(--primary-dark)"></stop>
+                            <stop offset="100%" stop-color="var(--primary-light)"></stop>
+                        </radialGradient>
+                    </defs>
+                    <circle cx="90" cy="90" r='90' id="circle" stroke="url(#gradient)"></circle>
+                </svg>
                 <div class="circle"></div>
                 <div class="circle circle-m"></div>
                 <div class="circle circle-s"></div>
-                <div class="card-number"></div>
+                <div class="card-number">50%</div>
             </div>
         </div>
         <div class="form">
-            <input type="text" placeholder="60" id="percent" maxlength="3"/>
-            <button>确定</button>
+            <input type="text" placeholder="50" id="percent" 
+                maxlength="3"
+                onkeypress="return isNumberic(event)"/>
+            <button class="btn" onclick="changePercent()">确定</button>
             <div class="tooltip">
                 <span class="tooltip-text">无效的数字</span>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

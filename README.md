@@ -22,7 +22,8 @@
 2. 紫檀色 `#4c221b`
 	
 	<p style="background-color: #4c221b;width: 80px;;height: 15px;"></p>
-
+## VS Code技巧
+alt + Z —— 自动换行
 
 ## Markdown注释
 ### 表情注释
