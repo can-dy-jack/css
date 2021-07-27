@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bacColor: #eff1f8;
+}
+
+body {
+  background-color: var(--bacColor);
+  min-height: 100vh;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  height: 16rem;
+  width: 32rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border-radius: 2rem;
+  -webkit-box-shadow: 4px 4px 8px #cecece, -4px -4px 8px #fff;
+          box-shadow: 4px 4px 8px #cecece, -4px -4px 8px #fff;
+}
+
+.box .left {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  background-color: var(--bacColor);
+  -webkit-box-shadow: 3px 3px 6px #cecece, -3px -3px 6px #fff;
+          box-shadow: 3px 3px 6px #cecece, -3px -3px 6px #fff;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .left .cl {
+  width: 12rem;
+  height: 12rem;
+  background-image: radial-gradient(#848793 20%, transparent 40%);
+  border-radius: 50%;
+  background-size: 15px 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: inset 4px 4px 8px #cfcfcf, inset -3px -3px 8px #f2f2f2;
+          box-shadow: inset 4px 4px 8px #cfcfcf, inset -3px -3px 8px #f2f2f2;
+}
+
+.box .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+}
+
+.box .right div {
+  width: 6.5rem;
+  text-align: center;
+  padding: 8px;
+  margin: 1.2rem 0;
+  cursor: pointer;
+}
+
+.box .right div .fas {
+  font-size: 3.2rem;
+  color: var(--bacColor);
+  /* not box-shadow! */
+  text-shadow: 1px 1px 1px #dee3f3, 3px 3px 1px #cccdd3, -1px -1px 1px #ffffff;
+}
+/*# sourceMappingURL=index.css.map */
